@@ -39,6 +39,13 @@ ul {
   margin: 0 auto;
 }
 
+.hero-workprocess-backg-img {
+  background-image: linear-gradient(transparent 50%, #678ff2 60%),
+    url(/imgages/png/background-sky.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% -22%;
+  background-size: 1440px;
+}
 /*---------Header--------*/
 
 .header {
@@ -131,19 +138,31 @@ ul {
 /*---------Hero--------*/
 .hero {
 }
+.hero > .container {
+  display: flex;
+  padding-top: 160px;
+  padding-bottom: 70px;
+}
 .hero-wrap {
+  width: 142px;
+  flex-shrink: 0;
+}
+.hero-wrap-text {
   font-size: 16px;
   line-height: 1.88;
 }
 .hero-main {
+  flex-grow: 0;
+  margin: 0 auto;
 }
 .hero-title-container {
-  width: 930px;
+  position: relative;
+  width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 .hero-title {
   font-size: 120px;
@@ -152,18 +171,134 @@ ul {
 }
 
 .hero-title-link {
-  font-size: 30px;
-  line-height: 4;
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 3.2;
   background: #000000;
+  min-width: 420px;
   border-radius: 90px;
-  height: 80px;
   flex-shrink: 0;
+  text-align: center;
 }
 .hero-cookies-container {
+  height: 243px;
+  position: relative;
+  padding-top: 122px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-cookies-img {
+  position: absolute;
+  left: 110px;
+  bottom: -20px;
+  z-index: 1;
 }
 .hero-btn-container {
+  width: 683px;
+  min-height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
 }
 .hero-btn-expl-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  color: #000000;
 }
+
+.hero-btn-expl-text::after {
+  content: '';
+  margin-left: 25px;
+  margin-right: 18px;
+  width: 1px;
+  min-height: 68px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
 .hero-btn-accept {
+  padding: 0;
+  padding-right: 15px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 0.56;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
+
+/*---------Hero END--------*/
+
+/*---------Workprocess--------*/
+.workprocess {
+}
+.workprocess > .container {
+  padding-top: 35px;
+  padding-bottom: 181px;
+  width: 960px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.workprocess-title {
+  font-size: 60px;
+  line-height: 0.5;
+  text-align: center;
+  margin-bottom: 81px;
+}
+.workprocess-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 68px 198px;
+}
+.workprocess-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 194px;
+  width: 178px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #000000;
+}
+
+.workprocess-item:hover,
+.workprocess-item:focus {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+.workprocess-svg {
+  padding-top: 25px;
+  margin-bottom: 15px;
+  fill: currentColor;
+}
+.workprocess-item-titel {
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+.workprocess-item-text {
+  font-size: 16px;
+  line-height: 1.12;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/*---------Workprocess END--------*/
