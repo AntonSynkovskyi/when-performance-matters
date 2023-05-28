@@ -1,6 +1,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: #ffffff;
+  background-color: #678ff2;
 }
 
 p,
@@ -39,3 +40,130 @@ ul {
 }
 
 /*---------Header--------*/
+
+.header {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid #ffffff;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 171px;
+  font-size: 25px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo::after {
+  content: '';
+  width: 1px;
+  height: 51px;
+  background-color: #ffffff;
+  margin-left: 62px;
+}
+
+.header-logo-sec-part {
+  font-weight: 800;
+}
+
+.header-left-list {
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  font-size: 22px;
+  line-height: 1.36;
+}
+.header-left-item:first-child {
+  margin-right: 108px;
+}
+
+.header-item {
+}
+.header-link {
+}
+.header-right-list {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.88;
+}
+.heder-right-item {
+}
+
+.heder-right-item:first-child {
+  margin-right: 32px;
+}
+.btn-header-text {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.btn-header-text::before,
+.btn-header-text::after {
+  content: '';
+  width: 1px;
+  height: 51px;
+  background-color: #ffffff;
+}
+.btn-header {
+  background-color: transparent;
+  border: none;
+  fill: #ffffff;
+}
+
+/*---------Header END--------*/
+
+/*---------Hero--------*/
+.hero {
+}
+.hero-wrap {
+  font-size: 16px;
+  line-height: 1.88;
+}
+.hero-main {
+}
+.hero-title-container {
+  width: 930px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.hero-title {
+  font-size: 120px;
+  line-height: 1;
+  color: #000000;
+}
+
+.hero-title-link {
+  font-size: 30px;
+  line-height: 4;
+  background: #000000;
+  border-radius: 90px;
+  height: 80px;
+  flex-shrink: 0;
+}
+.hero-cookies-container {
+}
+.hero-btn-container {
+}
+.hero-btn-expl-text {
+}
+.hero-btn-accept {
+}

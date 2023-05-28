@@ -21,17 +21,59 @@
     <link href="/css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <a href="/index.html">CLOUD <span>FLEX</span></a>
-      <ul>
-        <li><a href=""></a>About us</li>
-        <li><a href=""></a>Contact</li>
-      </ul>
-      <ul>
-        <li><button type="button">Covid-19 Update</button></li>
-        <li><button type="button">ffb</button></li>
-      </ul>
+    <header class="header">
+      <div class="container">
+        <a href="/index.html" class="header-logo"
+          >CLOUD <span class="header-logo-sec-part">FLEX</span></a
+        >
+        <ul class="header-left-list">
+          <li class="header-left-item">
+            <a href="www.google.com" class="header-link">About us</a>
+          </li>
+          <li class="header-left-item">
+            <a href="" class="header-link">Contact</a>
+          </li>
+        </ul>
+        <ul class="header-right-list">
+          <li class="heder-right-item">
+            <button type="button" class="btn-header-text">
+              Covid-19 Update
+            </button>
+          </li>
+          <li class="heder-right-item">
+            <button type="button" class="btn-header">
+              <svg class="header-right-item-icon" width="27" height="27">
+                <use href="/imgages/svg/symbol-defs.svg#icon-Group"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
     </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <p class="hero-wrap">Scroll down</p>
+          <div class="hero-main">
+            <div class="hero-title-container">
+              <h1 class="hero-title">WHEN PERFORMANCE MATTERS</h1>
+              <a href="" class="hero-title-link"> Start development with us!</a>
+            </div>
+            <div class="hero-cookies-container">
+              <img src="./imgages/png/bird.png" alt="The bird wants cookies" />
+              <div class="hero-btn-container">
+                <p class="hero-btn-expl-text">
+                  WE USE COOKIES TO ENSURE YOUR BEST EXPERIENCE. THROUGH YOUR
+                  CONTINUED USE OF THIS SITE YOU ACCEPT THIS USE. FOR MORE
+                  INFORMATION, PLEASE SEE OUR PRIVACY POLICY.
+                </p>
+                <button type="menu" class="hero-btn-accept">ACCEPT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <main></main>
   </body>
 </html>
